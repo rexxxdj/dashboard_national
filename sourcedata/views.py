@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 
-# Create your views here.
+
+
+def inventory_list(request):
+	template = 'table-datatable-main.html'
+	context = {}
+	return render(request, template, context)
